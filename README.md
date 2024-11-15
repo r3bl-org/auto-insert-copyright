@@ -30,6 +30,13 @@ injected at the top of the file.
 You can utilize the VS Code command `Prepend Copyright`, to manually add your copyright
 notice to the current file.
 
+You can also change the file extensions that trigger this extension. They are in the
+`package.json` file, in the `activationEvents` key. The value is an array of extensions
+that will activate this extension. So if you want to add a copyright message on top
+of a file that's not in that array, you can add it. Then rebuild it and then reinstall
+it in your VSCode. Similarly, if you would like to remove an extension, you can drop it
+from the array, and rebuild the extension, and reinstall into your VSCode.
+
 ## Requirements
 
 This extension is designed to work ri./ght out of the box. No configuration is required in
